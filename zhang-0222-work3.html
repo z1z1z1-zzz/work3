@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    padding: 36px 16px;
+    background-color: #f2e8d5;
+    text-align: center;
+    font-family: "Songti SC", "STSong", "Noto Serif SC", "SimSun", Georgia, serif;
+    color: #3b2f26;
+    line-height: 1.85;
+  }
+
+  .page {
+    display: inline-block;
+    background-color: #FFF6D9;
+    box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+    text-align: left;
+    max-width: 720px;
+  }
+
+  .header {
+    padding: 28px 36px 12px 36px;
+  }
+
+  .section {
+    padding: 14px 36px 18px 36px;
+  }
+
+  .links-box {
+    padding: 12px 36px 24px 36px;
+    text-align: center;
+  }
+
+  .notice {
+    padding: 20px 36px 28px 36px;
+    background-color: #f7ebc4;
+    border-top: 2px dashed #d3b27e;
+    font-size: 14px;
+    color: #5a4635;
+  }
+
+  /* 并集选择器 */
+  h1, h2, h3, h4, h5, h6 {
+    color: #5c3317;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  h1 {
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #d9b88c;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 0 0 14px 0;
+    padding-left: 12px;
+    border-left: 4px solid #b86b35;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin: 0 0 12px 0;
+    padding-left: 10px;
+    border-left: 4px solid #b86b35;
+  }
+
+  p {
+    margin: 0 0 14px 0;
+    font-size: 16px;
+  }
+
+  /* 伪元素 */
+  p::first-letter {
+    font-size: 1.35em;
+    font-weight: bold;
+    color: #8c4a1c;
+  }
+
+  div::first-line {
+    letter-spacing: 0.6px;
+  }
+
+  /* ID 选择器：强调（放大 / 加粗 / 特殊颜色） */
+  p#intro {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b5341c;
+    background-color: #fce7be;
+    padding: 12px 16px;
+    border-left: 4px solid #b5341c;
+    margin-top: 16px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fffdf5;
+    font-size: 15px;
+  }
+
+  th, td {
+    border: 1px solid #d9c29c;
+    padding: 10px 12px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f3ddb2;
+    color: #4a2a14;
+    font-weight: bold;
+  }
+
+  /* 链接伪类 */
+  a:link {
+    color: #7a421d;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #5e3a24;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    opacity: 0.85;
+  }
+
+  a:active {
+    color: #c0392b;
+  }
+
+  /* 后代选择器：仅当 div 里的 table 里有超级链接才会触发 */
+  div table a {
+    color: #9e3a14;
+    font-weight: bold;
+    border-bottom: 1px dashed #9e3a14;
+  }
+
+  /* 带类名的链接 */
+  a.red {
+    display: inline-block;
+    background-color: #c0392b;
+    color: #ffffff;
+    padding: 10px 22px;
+    margin: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  a.blue {
+    display: inline-block;
+    background-color: #2468a2;
+    color: #ffffff;
+    padding: 10px 22px;
+    margin: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <!-- ①顶部标题区 -->
+    <div class="header">
+      <h1>城市诗歌朗诵夜 · Poetry Reading Night</h1>
+    </div>
+
+    <!-- ②活动介绍区 -->
+    <div class="section">
+      <h2 id="intro">活动介绍</h2>
+      <p>当城市的霓虹渐次亮起，白日的喧嚣缓缓沉降，我们邀请热爱文字与声音的你，步入温暖的奶油色灯光下，共同开启一场属于夜晚的诗歌雅集。无论你钟情于古典律诗的凝练，还是偏爱现代散文诗的自由，这里都有一盏为你留着的灯与一方安静聆听的角落。</p>
+      <p>千百年来，诗人总习惯在月色与夜风中寄托深情。正如苏轼在《水调歌头》中所写：“但愿人长久，千里共婵娟。”一句流传千古的诗词，能够跨越时空，把素未谋面的心灵连结在一起。本次朗诵夜将设置古诗词吟诵、现代诗接力与自由对谈三个环节，让文字在声音中重新焕发生命力。</p>
+      <p>活动现场备有热茶、手写诗笺与柔和的古典吉他伴奏，参与者可以独自登台朗诵心爱之作，也可以与同伴合作演绎双人诗剧。我们期待每一位到场的读者，都能在温柔的声线里卸下疲惫，收获一段清朗而丰盈的夜晚时光。</p>
+      <p id="intro">重要提示：本次活动限额 40 人，请已报名同学提前 15 分钟签到入场；如需使用现场伴奏或自备配乐，请于活动开始前一天联系负责人确认曲目。</p>
+    </div>
+
+    <!-- ③活动报名信息表格区 -->
+    <div class="section">
+      <h3>本期朗诵者报名信息表</h3>
+      <table>
+        <tr>
+          <th>编号</th>
+          <th>朗诵者姓名</th>
+          <th>朗诵篇目</th>
+          <th>作品风格</th>
+          <th>选段参考</th>
+        </tr>
+        <tr>
+          <td>01</td>
+          <td>林清浅</td>
+          <td>《水调歌头·明月几时有》</td>
+          <td>宋词吟诵</td>
+          <td><a href="#notice">查看入场须知</a></td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>陈默然</td>
+          <td>《再别康桥》</td>
+          <td>现代抒情诗</td>
+          <td><a href="#intro">阅读活动提示</a></td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>周星野</td>
+          <td>《春江花月夜》</td>
+          <td>唐诗长篇</td>
+          <td><a href="https://hongchenwusdnu.github.io/bookstore/job4.html">参考活动页面</a></td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td>苏念安</td>
+          <td>《面朝大海，春暖花开》</td>
+          <td>当代诗歌</td>
+          <td><a href="job3.html">联系活动顾问</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- ④页面链接区 -->
+    <div class="links-box">
+      <div>
+        <a class="red" href="https://hongchenwusdnu.github.io/bookstore/job4.html">查看往期活动照片</a>
+        <a class="blue" href="job3.html">在线咨询活动详情</a>
+      </div>
+    </div>
+
+    <!-- ⑤底部公告区 -->
+    <div class="notice" id="notice">
+      <p>活动时间：2026年12月5日（周六）晚 19:00 — 21:00<br>活动地点：文心书屋二楼诗歌沙龙区</p>
+      <p>温馨提示：场地内请将手机调至静音或震动状态，尊重每一位朗诵者的舞台时间。<br>现场提供免费红茶与桂花乌龙，谢绝携带气味浓烈的食品入场。</p>
+      <p>主办方：校园文学与朗诵协会<br>如遇临时行程变动无法出席，请提前 12 小时通过在线咨询页面告知工作人员。</p>
+    </div>
+  </div>
+</body>
+</html>
